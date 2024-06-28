@@ -19,7 +19,7 @@ app = Flask(__name__)
 document_store = InMemoryDocumentStore(use_bm25=True)
 
 # Persiapan Dokumen
-doc_dir = "C:\\Users\\vanes\\Desktop\\chatbot\\squad_bert"
+doc_dir = "squad_bert"
 files_to_index = [os.path.join(doc_dir, f) for f in os.listdir(doc_dir)]
 indexing_pipeline = TextIndexingPipeline(document_store)
 indexing_pipeline.run_batch(file_paths=files_to_index)

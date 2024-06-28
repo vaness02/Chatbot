@@ -15,8 +15,8 @@ COPY . /app
 WORKDIR /app
 
 # Copy model and documents
-COPY modelakhir /app/model
-COPY squad_bert /app/documents
+COPY modelakhir /app/modelakhir
+COPY squad_bert /app/squad_bert
 
 # Run the application
-CMD ["python", "app1.py"]
+CMD ["python", "app.py"]
